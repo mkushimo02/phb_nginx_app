@@ -14,7 +14,7 @@ The pipeline is defined in a `Jenkinsfile` and consists of the following stages:
 
 1. **Cloning Repository**: Clones the source code from the specified GitHub repository.
 2. **Build Docker Image with Docker Compose**: Builds the Docker image using Docker Compose and tags it with a version.
-3. **Push to Docker Hub**: Pushes the tagged Docker image to Docker Hub.
+3. **Push to Docker Hub**: Pushes the tagged Docker image to Docker Hub..
 
 ---
 
