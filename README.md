@@ -4,7 +4,7 @@ Below is a `README.md` file for your GitHub repository that explains the provide
 
 # Jenkins Pipeline for Building and Deploying a Dockerized Nginx Application
 
-This repository contains a Jenkins pipeline script for automating the build and deployment of a Dockerized Nginx application. The pipeline uses Docker Compose to build the image, tags it with a version, and pushes it to Docker Hub.
+This repository contains a Jenkins pipeline script for automating the build and deployment of a Dockerized Nginx application. The pipeline uses Docker Compose to build the image, tags it with a version, and pushes it to Docker Hub..
 
 ---
 
