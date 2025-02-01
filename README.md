@@ -122,7 +122,7 @@ Below is a high-level diagram of the infrastructure:
                                      +-------------------------->+
                                                                Docker Compose
 ```
-![image](https://github.com/user-attachments/assets/6f164dc2-50c2-47f7-b728-eb7c5d91b707)
+![Dev-Muisi-Page-7](https://github.com/user-attachments/assets/10dd6281-7573-4686-8b85-864513b15284)
 
 ---
 
