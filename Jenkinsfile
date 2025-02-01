@@ -17,7 +17,7 @@ pipeline {
             steps {
                 script {
                     sh """
-                    docker-compose build .
+                    docker-compose build
                     docker tag nginx:stable-perl ${DOCKER_IMAGE}:${IMAGE_TAG}
                     """
                 }
