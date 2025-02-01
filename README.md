@@ -109,19 +109,6 @@ The pipeline assumes the following infrastructure setup:
 Below is a high-level diagram of the infrastructure:
 
 ```
-+-------------------+       +-------------------+       +-------------------+
-|                   |       |                   |       |                   |
-|   GitHub Repo     |       |   Jenkins Server  |       |   Docker Hub      |
-|                   |       |                   |       |                   |
-+--------+----------+       +--------+----------+       +--------+----------+
-         |                           |                           |
-         | Clone Repo                | Push Image                |
-         +-------------------------->+-------------------------->+
-                                     |
-                                     | Build & Tag Image
-                                     +-------------------------->+
-                                                               Docker Compose
-```
 ![Dev-Muisi-Page-7](https://github.com/user-attachments/assets/10dd6281-7573-4686-8b85-864513b15284)
 
 ---
