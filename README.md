@@ -149,11 +149,13 @@ To run this pipeline, ensure the following are set up:
 ## Screenshots
 
 ### Jenkins Pipeline Success
-![Jenkins Pipeline Success](images/jenkins-success.png)  
+![image](https://github.com/user-attachments/assets/ddccce08-3321-43b9-b992-4e9ae0a2eca9)
+
 *Successful pipeline execution with the image pushed to Docker Hub.*
 
 ### Docker Hub Image
-![Docker Hub Image](images/dockerhub-image.png)  
+![image](https://github.com/user-attachments/assets/5a49ffe2-9733-4012-89bf-c0e802852021)
+
 *The Docker image tagged and pushed to Docker Hub.*
 
 ---
