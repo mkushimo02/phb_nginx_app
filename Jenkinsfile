@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage("Cloning Repository") {
             steps {
-                git branch: 'main', url: 'https://github.com/mkushimo02/phbapp.git'
+                git branch: 'main', url: 'https://github.com/mkushimo02/phb_nginx_app.git'
             }
         }
 
