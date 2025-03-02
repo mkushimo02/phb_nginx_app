@@ -13,12 +13,11 @@ pipeline {
             }
         }
 
-        stage("Build Docker Image with Docker Compose") {
+        stage("Build Docker Image with Docker") {
             steps {
                 script {
                     sh """
-                    docker-compose build
-                    docker tag nginx:stable-perl ${DOCKER_IMAGE}:${IMAGE_TAG}
+                    docker build -t ${DOCKER_IMAGE}:${IMAGE_TAG} -f dockerfile
                     """
                 }
             }
