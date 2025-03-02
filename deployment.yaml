@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: phbnginx-app
+  template:
+    metadata:
+      labels:
+        app: phbnginx-app
+    spec:
+      containers:
+      - name: phbnginx-app
+        image: mkushimo/phb-nginx-app:1.0.4
+        ports:
+        - containerPort: 80
+
+---
+# nginx-service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: phbnginx-service
+spec:
+  type: NodePort
+  selector:
+    app: phbnginx-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 30080
