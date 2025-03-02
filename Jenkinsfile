@@ -17,7 +17,7 @@ pipeline {
             steps {
                 script {
                     sh """
-                    docker build -t ${DOCKER_IMAGE}:${IMAGE_TAG} -f dockerfile
+                    docker build -t ${DOCKER_IMAGE}:${IMAGE_TAG} -f dockerfile .
                     """
                 }
             }
