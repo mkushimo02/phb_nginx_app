@@ -35,12 +35,13 @@ pipeline {
                 }
             }
         }
-                post {
-                        success {
-                            echo "🎉 Deployment Successful! Image pushed to Docker Hub: ${DOCKER_IMAGE}:${IMAGE_TAG}"
+    
+        post {
+                success {
+                  echo "🎉 Deployment Successful! Image pushed to Docker Hub: ${DOCKER_IMAGE}:${IMAGE_TAG}"
                 }
-                        failure {
-                            echo "❌ Deployment Failed! Check logs."
+                  failure {
+                  echo "❌ Deployment Failed! Check logs."
                         }
                 }    
 }
