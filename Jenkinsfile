@@ -70,3 +70,4 @@ WqLdsmuYjpwqGw==''', credentialsId: 'kubeconfig', serverUrl: 'https://127.0.0.1:
         }
     }
 }
+}
