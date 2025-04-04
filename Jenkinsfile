@@ -35,10 +35,10 @@ pipeline {
                 }
             }
         }
-        stage ("Deploy to Kubernetes"){
+        /*stage ("Deploy to Kubernetes"){
             steps{
-                script{
-                    kubeconfig(caCertificate: '''MIIDBjCCAe6gAwIBAgIBATANBgkqhkiG9w0BAQsFADAVMRMwEQYDVQQDEwptaW5p
+                  script{
+                   kubeconfig(caCertificate: '''MIIDBjCCAe6gAwIBAgIBATANBgkqhkiG9w0BAQsFADAVMRMwEQYDVQQDEwptaW5p
 a3ViZUNBMB4XDTI1MDIwNTAxMzkxMFoXDTM1MDIwNDAxMzkxMFowFTETMBEGA1UE
 AxMKbWluaWt1YmVDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKkL
 RTzwZExX4AxSuh3lIUeoF1DRqtf6yM/jFNIYXJ6ewlYTkxDzY0JwKk0qMuCrZsXE
@@ -60,7 +60,7 @@ WqLdsmuYjpwqGw==''', credentialsId: 'kubeconfig', serverUrl: 'https://127.0.0.1:
             }
         }
     }
-}
+} */
     post {
         success {
             echo "🎉 Deployment Successful! Image pushed to Docker Hub: ${DOCKER_IMAGE}:${IMAGE_TAG}"
